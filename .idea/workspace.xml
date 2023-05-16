@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="803246cc-cbfd-43ca-9747-a44accabd5bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/homework/classes/Generic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/classes/KeyValuePair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homework/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/homework/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/classes/Generic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/classes/KeyValuePair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/classes/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/homework/classes/MyArrayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Module_9_GoIT/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module_9_GoIT/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,12 +35,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
