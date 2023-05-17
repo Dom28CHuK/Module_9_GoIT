@@ -1,4 +1,5 @@
 import classes.MyArrayList;
+import classes.MyLinkedList;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,5 +14,9 @@ public class Main {
         myArrayList.get(2);
         myArrayList.size();
 
+        MyLinkedList myLinkedList = new MyLinkedList();
+
+        myLinkedList.add("Obama");
+        System.out.println(myLinkedList);
     }
 }
