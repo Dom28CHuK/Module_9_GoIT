@@ -1,64 +1,65 @@
 package classes;
 
 public class MyLinkedList<E> {
-    private Node<E> first;
-    private Node<E> last;
+    private Node head;
+    private Node tail;
     private int size;
 
-    public MyLinkedList() {
-        this.first = null;
-        this.last = null;
-        this.size = 0;
-    }
-    public int size() {
-        return size;
-    }
+    private class Node {
+        private Object value;
+        private Node previous;
+        private Node next;
 
-    public boolean isEmpty() {
-        return size == 0;
+        public Node(Object value) {
+            this.value = value;
+        }
+
     }
-
-    public void add(E element) {
-        Node<E> newNode = new Node<>(element);
-
-        if (isEmpty()) {
-            first = newNode;
-            last = newNode;
+    public void add(Object value) {
+        Node newNode = new Node(value);
+        if (head == null) {
+            head = newNode;
+            tail = newNode;
         } else {
-            last.next = newNode;
-            newNode.prev = last;
-            last = newNode;
+            tail.next = newNode;
+            newNode.previous = tail;
+            tail = newNode;
         }
         size++;
     }
 
-    private static class Node<E> {
-        private E data;
-        private Node<E> prev;
-        private Node<E> next;
-
-        public Node(E data) {
-            this.data = data;
-            this.prev = null;
-            this.next = null;
+    public void remove(int index) {
+        Node current = head;
+        for (int i = 0; i < index; i++) {
+            current = current.next;
         }
-
-        @Override
-        public String toString() {
-            return "Node{" +
-                    "data=" + data +
-                    ", prev=" + prev +
-                    ", next=" + next +
-                    '}';
+        if (current.previous == null) {
+            head = current.next;
+        } else {
+            current.previous.next = current.next;
         }
+        if (current.next == null) {
+            tail = current.previous;
+        } else {
+            current.next.previous = current.previous;
+        }
+        size--;
+    }
+    public void clear() {
+        head = null;
+        tail = null;
+        size = 0;
     }
 
-    @Override
-    public String toString() {
-        return "MyLinkedList{" +
-                "first=" + first +
-                ", last=" + last +
-                ", size=" + size +
-                '}';
+    public int size() {
+        return size;
+    }
+
+    public Object get(int index) {
+        Node current = head;
+        for (int i = 0; i < index; i++) {
+            current = current.next;
+        }
+        return current.value;
     }
 }
