@@ -1,6 +1,7 @@
 import classes.MyArrayList;
 import classes.MyLinkedList;
 import classes.MyQueue;
+import classes.MyStack;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,14 +31,24 @@ public class Main {
 //            System.out.println(value);
 //        }
 
-        MyQueue queue = new MyQueue();
-        queue.add(1);
-        queue.add(2);
-        queue.add(3);
+//        MyQueue queue = new MyQueue();
+//        queue.add("Dom");
+//        queue.add("Val");
+//        queue.add("Zak");
+//
+//        System.out.println(queue.size());
+//        System.out.println(queue.peek());
+//        System.out.println(queue.poll());
+//        System.out.println(queue.size());
 
-        System.out.println(queue.size());
-        System.out.println(queue.peek());
-        System.out.println(queue.poll());
-        System.out.println(queue.size());
+//        MyStack stack = new MyStack();
+//        stack.push("Dom");
+//        stack.push("Val");
+//        stack.push("Zak");
+//
+//        System.out.println(stack.size());
+//        System.out.println(stack.peek());
+//        System.out.println(stack.pop());
+//        System.out.println(stack.size());
     }
 }
